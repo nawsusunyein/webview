@@ -17,7 +17,11 @@ public class MainActivity extends AppCompatActivity {
         webSettings.setJavaScriptEnabled(true);
         WebViewImplement webViewClient = new WebViewImplement(this);
         webview.setWebViewClient(webViewClient);
+        //If app want to show with url
         webview.loadUrl("https://www.journaldev.com");
+
+        //If app want to show with html tag
+        //webview.loadData("<html><body>Hello, world!</body></html>","text/html", "UTF-8");
 
     }
 }
